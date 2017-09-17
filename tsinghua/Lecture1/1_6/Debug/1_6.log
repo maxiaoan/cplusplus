@@ -1,0 +1,4 @@
+﻿  1_6.cpp
+d:\mycourses\计算机程序\2017春\例题\lecture1\1_6\1_6.cpp(10): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+  1_6.vcxproj -> D:\MyCourses\计算机程序\2017春\例题\Lecture1\Debug\1_6.exe
+  1_6.vcxproj -> D:\MyCourses\计算机程序\2017春\例题\Lecture1\Debug\1_6.pdb (Partial PDB)
