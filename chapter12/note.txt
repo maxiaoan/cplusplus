@@ -1,0 +1,29 @@
+++自动提供了下面这些成员函数：
+默认构造函数，如果没有定义构造函数；
+默认析构函数，如果没有定义；
+复制构造函数，如果没有定义；
+赋值运算符，如果没有定义；
+地址运算符，如果没有定义。
+2.复制构造函数
+复制构造函数用于将一个对象复制到新创建的对象中。也就是说，它用于初始化过程中（包括按值传递参数），而不是常规的赋值过程中。类的复制构造函数原型通常如下：
+
+	Class_name(const Class_name &);
+
+它接受一个指向类对象的常量引用作为参数.
+对于复制构造函数，需要知道两点：何时调用和有何功能。
+3.何时调用复制构造函数
+新建一个对象并将其初始化为同类现有对象时，复制构造函数都将被调用。
+这在很多情况下都可能发生，最常见的情况是将新对象显式地初始化为现有的对象.
+
+StringBad motto;
+StringBad ditto(motto); // calls StringBad(const StringBad &)
+StringBad metoo = motto; // calls StringBad(const StringBad &)
+StringBad also = StringBad(motto);// calls StringBad(const StringBad &)
+StringBad * pStringBad = new StringBad(motto);// calls StringBad(const StringBad &)
+
+其中中间的2种声明可能会使用复制构造函数直接创建metoo和also，
+也可能使用复制构造函数生成一个临时对象，然后将临时对象的内容赋给 metoo 和 also，这取决于具体的实现。
+最后一种声明使用 motto初始化一个匿名对象，并将新对象的地址赋给pstring指针。
+
+但无论是哪种编译器，当按值传递和返回对象时，都将调用复制构造函数.
+
