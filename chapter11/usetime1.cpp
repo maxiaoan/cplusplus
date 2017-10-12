@@ -36,7 +36,7 @@ int main()
     cout << endl;
     total = morefixing.operator+(total);
     // function notation
-    cout << "morefixing.operator+(total) = ";
+    cout << "more fixing.operator+(total) = ";
     total.Show();
     cout << endl;
     // std::cin.get();

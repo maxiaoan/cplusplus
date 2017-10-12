@@ -27,7 +27,7 @@ namespace VECTOR
         ~Vector();
         double xval() const {return x;}       // report x value
         double yval() const {return y;}       // report y value
-        double magval() const {return mag;}   // report magnitude
+        double magval() const {return mag;}   // report magnitude,大小
         double angval() const {return ang;}   // report angle
         void polar_mode();                    // set mode to POL
         void rect_mode();                     // set mode to RECT
