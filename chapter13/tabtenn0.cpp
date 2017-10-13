@@ -5,7 +5,14 @@
 TableTennisPlayer::TableTennisPlayer (const string & fn, 
     const string & ln, bool ht) : firstname(fn),
 	    lastname(ln), hasTable(ht) {}
-    
+ 
+// TableTennisPlayer::TableTennisPlayer(const string & fn,const & ln,bool ht)
+// {
+// 	firstname = fn;
+// 	lastname = ln;
+// 	ht = false;
+// }
+
 void TableTennisPlayer::Name() const
 {
     std::cout << lastname << ", " << firstname;

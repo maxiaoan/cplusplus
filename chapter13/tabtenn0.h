@@ -14,7 +14,7 @@ public:
     TableTennisPlayer (const string & fn = "none",
                        const string & ln = "none", bool ht = false);
     void Name() const;
-    bool HasTable() const { return hasTable; };
+    bool HasTable() const { return hasTable; };//inline function
     void ResetTable(bool v) { hasTable = v; };
 };
 #endif

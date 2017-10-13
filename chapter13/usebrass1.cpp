@@ -8,11 +8,11 @@ int main()
     using std::cout;
     using std::endl;
 
-    Brass Piggy("Porcelot Pigg", 381299, 4000.00);
-    BrassPlus Hoggy("Horatio Hogg", 382288, 3000.00);
-    Piggy.ViewAcct();
+    Brass Piggy("Porcelot Pigg", 381299, 4000.00);//initialize Piggy objetct
+    BrassPlus Hoggy("Horatio Hogg", 382288, 3000.00);//and invoke constructor
+    Piggy.ViewAcct();	//invoke ViewAcct() via Object
     cout << endl;
-    Hoggy.ViewAcct();
+    Hoggy.ViewAcct();	//invoke ViewAcct()
     cout << endl;
     cout << "Depositing $1000 into the Hogg Account:\n";
     Hoggy.Deposit(1000.00);
